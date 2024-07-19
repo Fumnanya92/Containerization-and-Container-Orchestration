@@ -136,7 +136,8 @@ apt install docker.io
 2. Build your Docker image:
     ```bash
     docker build -t dockerfile .
- ```
+   ```
+
 ![image](https://github.com/user-attachments/assets/1e0a4f85-f39c-462d-ac2d-81a4f8fadb18)
 
 
