@@ -120,12 +120,12 @@ EXPOSE 80
 check if docker is installed
 ![image](https://github.com/user-attachments/assets/9b0425c1-a8ad-48c8-8dff-db534808d823)
 
-```
+
 # To install docker
+```
 apt install docker.io
 ```
 ![image](https://github.com/user-attachments/assets/48e9e203-8bf3-46d0-a127-9a0a977cfe07)
-
 
 
 1. Log in to Docker Hub:
