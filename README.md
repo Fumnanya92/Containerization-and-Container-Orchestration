@@ -208,17 +208,6 @@ kubectl get nodes
 
 ```
 
-    ```bash
-    curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
-    chmod +x ./kind
-    sudo mv ./kind /usr/local/bin/kind
-    ```
-
-2. Create a Kind cluster:
-    ```bash
-    kind create cluster
-    ```
-
 #### Task 7: Deploy to Kubernetes
 
 1. Create a Kubernetes Deployment YAML file specifying the image and desired replicas:
@@ -299,5 +288,6 @@ kubectl get services
     ```bash
     kubectl port-forward service/my-landing-page-service 8080:80
     ```
+    docker run -p 8080:80 [dockerfile]
 
-2. Open your browser and visit `http://localhost:8080` to view your simple frontend application.
+2. Open your browser and visit `http://Host-IP:8080` to view your simple frontend application.
