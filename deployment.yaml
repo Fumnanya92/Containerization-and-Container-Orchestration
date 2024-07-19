@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: my-landing-page-deployment
+spec:
+ replicas: 2
+ selector:
+  matchLabels:
+   app: my-landing-page
+ template:
+  metadata:
+   labels:
+    app: my-landing-page
+  spec:
+   containers:
+   - name: nginx
+     image: fumnanya92/frontend:latest
+     ports:
+     - containerPort: 80
+
