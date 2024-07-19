@@ -273,11 +273,25 @@ kubectl get nodes
               targetPort: 80
           type: ClusterIP
         ```
+![image](https://github.com/user-attachments/assets/53b71d42-f50e-49df-a2db-382a1dc59964)
+
 
 2. Apply the service to your cluster:
     ```bash
     kubectl apply -f service.yaml
     ```
+
+**verify Deployment**
+```
+kubectl get deployments
+
+kubectl get services
+
+```
+![image](https://github.com/user-attachments/assets/98024c55-9414-47e5-bf95-d6640037f947)
+
+![image](https://github.com/user-attachments/assets/198d48d1-ffb2-4398-aed3-efe3e8f21ac8)
+    
 
 #### Task 9: Access the Application
 
