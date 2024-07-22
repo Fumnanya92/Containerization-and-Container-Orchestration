@@ -74,9 +74,10 @@ You are developing a simple static website (HTML and CSS) for a company's landin
 
 #### Task 2: Initialize Git
 
-1. Initialize a Git repository in your project directory:
+1. Initialize a Git and clone repository in your project directory:
     ```bash
     git init
+    git clone 
     ```
 ![image](https://github.com/user-attachments/assets/61a1e883-ec81-463b-8743-8bbe368dc60f)
 
@@ -150,7 +151,7 @@ apt install docker.io
 
 #### Task 6: Set up a Kind Kubernetes Cluster
 
-1. Install Kind (Kubernetes in Docker):
+1. Instal minikube in Docker:
 `This command refreshes the Debian-based system`
 ```
 sudo apt-get update
@@ -160,14 +161,14 @@ sudo apt-get update
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 ```
 ![image](https://github.com/user-attachments/assets/e7966074-f313-4f8c-b6e8-7400824ad209)
-```
-i**If that doesn't work use the command bellow**
+
+**If that doesn't work use the command below**
 ```
 sudo dpkg -i minikube_latest_amd64.deb
 ```
 ![image](https://github.com/user-attachments/assets/d323528d-2828-4f79-8242-239428fd334c)
 
-`Using the docker driver based on user configuration The "docker" driver should not be used with root privileges. 
+`Using the docker driver based on user configuration The "docker" driver should not be used with root privileges.` 
 `exit root user`
 `return into working directory `
 cd /home/ubuntu/Landing-page/Containerization-and-Container-Orchestration
