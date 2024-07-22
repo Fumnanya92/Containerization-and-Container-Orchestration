@@ -216,25 +216,25 @@ kubectl get nodes
 
     - `deployment.yaml`
         ```yaml
-        apiVersion: apps/v1
-        kind: Deployment
-        metadata:
-          name: my-landing-page-deployment
-        spec:
-          replicas: 2
-          selector:
-            matchLabels:
-              app: my-landing-page
-          template:
-            metadata:
-              labels:
-                app: my-landing-page
-            spec:
-              containers:
-              - name: nginx
-                image: your-dockerhub-username/my-landing-page:latest
-                ports:
-                - containerPort: 80
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: my-landing-page-deployment
+spec:
+ replicas: 2
+ selector:
+  matchLabels:
+   app: my-landing-page
+ template:
+  metadata:
+   labels:
+    app: my-landing-page
+  spec:
+   containers:
+   - name: nginx
+     image: fumnanya92/frontend:latest
+     ports:
+     - containerPort: 80
         ```
 ![image](https://github.com/user-attachments/assets/42f3a7b6-b8b2-454b-8915-a018bed5717c)
 
@@ -251,18 +251,18 @@ kubectl get nodes
 
     - `service.yaml`
         ```yaml
-        apiVersion: v1
-        kind: Service
-        metadata:
-          name: my-landing-page-service
-        spec:
-          selector:
-            app: my-landing-page
-          ports:
-            - protocol: TCP
-              port: 80
-              targetPort: 80
-          type: ClusterIP
+ apiVersion: v1
+kind: Service
+metadata:
+ name: my-landing-page-service
+spec:
+ selector:
+  app: my-landing-page
+ ports:
+   - protocol: TCP
+     port: 80
+     targetPort: 80
+ type: NodePort
         ```
 ![image](https://github.com/user-attachments/assets/53b71d42-f50e-49df-a2db-382a1dc59964)
 
